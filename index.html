@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(103, 199, 255);
+        }
+
+        section {
+            height: 800px;
+            max-width: 600px;
+            background-color: white;
+            margin: auto;
+            margin-top: 70px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        h3{
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            padding: 5px 10px 10px 18px;
+        }
+
+        section p {
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            padding: 12px;
+        }
+
+        hr {
+            width: 95%;
+            margin: auto;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px;
+        }
+
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid black;
+        }
+
+        section div {
+            margin: 10px;
+        }
+
+        #submit{
+            display: flex;
+            justify-content: right;
+            margin-top: 100px;
+            padding-right: 20px;
+        }
+
+        #submit input{
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <p>Formulário pessoal</p>
+        <hr>
+        <h3>Dados pessoais:</h3>
+        <div>
+            <label for="nome1"> Primeiro nome:</label>
+            <input type="text" name="nome1" id="nome1">
+        </div>
+        <div>
+            <label for="nome2">Sobrenome:</label>
+            <input type="text" name="nome2" id="nome2">
+        </div>
+        <div>
+            <label for="aniversario">Data de nascimento:</label>
+            <input type="date" name="aniversario" id="aniversario">
+        </div>
+        <div>
+            <label for="telefone">Tel:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" placeholder="000.000.000-00" id="cpf">
+           
+        </div>
+        <div style="margin-left: 20px;">
+            <input type="checkbox" name="check1" id="check1">
+            <label for="check1">Estuda</label>
+            <input type="checkbox" name="check2" id="check2">
+            <label for="check2">Trabalha</label>
+            <input type="checkbox" name="check3" id="check3">
+            <label for="check3">Mora sozinho</label>
+        </div>
+        <h3>Endereço:</h3>
+        <div>
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" placeholder="00000-000" id="cep">
+        </div>
+        <div>
+            <label for="cid">Cidade:</label>
+            <input type="text" name="cid" id="cid">
+            <label for="est">Estado:</label>
+            <input type="text" name="est" id="est">
+        </div>
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro">
+            <label for="rua">Rua:</label>
+            <input type="text" name="rua" id="rua">
+        </div>
+        <div>
+            <label for="num">Número:</label>
+            <input type="number" name="num" id="num">
+        </div>
+        <div>
+            <label for="compl">Complemento:</label>
+            <input type="text" name="compl" id="compl">
+        </div>
+        <h3>Dados Bancários:</h3>
+        <div>
+            <label for="banco">Banco:</label>
+            <input type="text" name="banco" id="banco">
+        </div>
+        <div>
+            <label for="agencia">Agência:</label>
+            <input type="text" name="agencia" id="agencia">
+        </div>
+        <div>
+            <label for="conta">Conta:</label>
+            <input type="text" name="conta" id="conta">
+        </div>
+        <div id="submit">
+            <input type="submit" value="Enviar">
+        </div>
+    </section>
+
+
+</body>
+
+</html>
